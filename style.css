@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+}
+button{
+    width: auto;
+    background-color: hsl(rgb(235, 149, 110), saturation, lightness);
+    
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 1em;
+}
+label{
+    background-color: black;
+    color: lightgreen;
+}
+h1{
+   text-align: center;
+   margin-top: 20px;
+   
+}
+
+#yourdata{
+    width:30vw;
+    height:15vh;
+    background-color:azure;
+    display: flex;
+    overflow: auto;
+    font-size: 0.8em;
+    justify-content: center;
+    margin-left: 10px; 
+    align-items: center;
+    position: absolute;  
+    left: 15vw; 
+    
+    margin-top: 20px;
+
+}
+#img{
+    background-color:white;
+    width: 31vw;
+    margin-left:50vw;
+    height: 20vh;
+    top: 20%;
+    position: absolute;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+#image1{
+    position: relative;
+    
+    
+}
+#image2{
+    position: relative;
+    
+
+}
