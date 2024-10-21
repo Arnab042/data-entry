@@ -24,7 +24,7 @@ document.getElementById('B1').onclick = function(){
             document.getElementById('image3').src = 'tan.png';
         }
         else if(myname == 'Bidisha' || myname == 'BIDISHA' || myname== 'bidisha' ){
-            document.getElementById('myh1').textContent = "Your are Tanisha !!"
+            document.getElementById('myh1').textContent = "Your are Bidisha !!"
             document.getElementById('yourdata').textContent = "NAME - Bidisha Mahanty  , AGE : 23 Years , Address : Purulia"
             document.getElementById('image3').src = 'bidisha.png';
         }
