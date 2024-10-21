@@ -15,7 +15,7 @@ button{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 10px;
+    gap: 5px;
     font-size: 1em;
 }
 label{
@@ -30,26 +30,29 @@ h1{
 
 #yourdata{
     width:30vw;
-    height:15vh;
+    height:23vh;
     background-color:azure;
     display: flex;
     overflow: auto;
     font-size: 0.8em;
     justify-content: center;
-    margin-left: 10px; 
+    background-image: url(https://img1.picmix.com/output/stamp/thumb/9/7/0/4/2604079_2bca4.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     position: absolute;  
-    left: 15vw; 
-    
-    margin-top: 20px;
+    left: 13vw; 
+    border: 2px solid black;
+    top: 26%;
+    padding: 6px;
 
 }
 #img{
-    background-color:white;
+    
     width: 31vw;
     margin-left:50vw;
-    height: 20vh;
-    top: 20%;
+    height: 23vh;
+    top: 26%;
     position: absolute;
     
     
