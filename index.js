@@ -1,38 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Data</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-      
-    <div class="container">
-        <label for="">What is your name?</label>
-    
-        <input id="user" >
-        <br>
-        <button id="B1"> submit</button>
-        <button onClick="history.go(0);">Reload</button>
+let myname;
+let result;
 
-        
-    </div>
-    <h1 id= "myh1"> hey you </h1>
-    <sec id="yourdata">Your data will come here <br>
-    
-    </sec>
-    <div id="img" style="overflow: hidden;">
-        <img src=""  style="width: auto;  height: 20vh; margin-left: 5px; margin-top: 8px; display: flex;"   id="image1" >
-        <img src=""    style="width: auto;    height: 20vh; margin-left: 5px; margin-top: -18vh; display: flex ;"   id="image2" >
-        <img src=""    style="width: auto;    height: 20vh; margin-left: 5px; margin-top: -18vh; display: flex ;"   id="image3" >
-        <img src=""    style="width: auto;    height: 20vh; margin-left: 5px; margin-top: -18vh; display: flex ;"   id="image4" >
-        <img src=""    style="width: auto;    height: 20vh; margin-left: 5px; margin-top: -18vh; display: flex ;"   id="image5" >
-    </div>
+
+document.getElementById('B1').onclick = function(){
+    myname = document.getElementById('user').value ;
+    myname = String(myname);    
+    console.log(myname);
+    if(myname){
+        document.getElementById('myh1').textContent = myname ;
+        if(myname == 'arnab' || myname =='ARNAB' || myname == 'Arnab' ){
+            document.getElementById('myh1').textContent = "oh Hi Arnab!!"
+            document.getElementById('yourdata').textContent = "NAME - Arnab Mandal  , AGE : 23 Years , Address : Sonarpur"
+            document.getElementById('image1').src = 'me.png';
+        }
+        else if(myname == 'Debarghya' || myname == 'debarghya' || myname== 'DEBARGHYA' ){
+            document.getElementById('myh1').textContent = "Your are Debarghya Welcome!!"
+            document.getElementById('yourdata').textContent = "NAME - Debarghya Mukherjee  , AGE : 23 Years , Address : Sahid khudiram"
+            document.getElementById('image2').src = 'deb.png';
+        }
+        else if(myname == 'tanisha' || myname == 'Tanisha' || myname== 'TANISHA' ){
+            document.getElementById('myh1').textContent = "Your are TANISHA Welcome!!"
+            document.getElementById('yourdata').textContent = "NAME - Tanisha Dey  , AGE : 23 Years , Address : Sahid khudiram"
+            document.getElementById('image3').src = 'tan.png';
+        }
+        else if(myname == 'Bidisha' || myname == 'BIDISHA' || myname== 'bidisha' ){
+            document.getElementById('myh1').textContent = "Your are Tanisha !!"
+            document.getElementById('yourdata').textContent = "NAME - Bidisha Mahanty  , AGE : 23 Years , Address : Purulia"
+            document.getElementById('image3').src = 'bidisha.png';
+        }
+        else if(myname == 'pritha' || myname == 'Pritha' || myname== 'PRITHA' ){
+            document.getElementById('myh1').textContent = "Your are PRITHA!!"
+            document.getElementById('yourdata').textContent = "NAME - Pritha Dutta  , AGE : 23 Years , Address : DumDum"
+            document.getElementById('image4').src = 'pritha.png';
+        }
+
+
+        else{
+            document.getElementById('myh1').textContent = "you are not anyone!"
+        }
+    }
+    else if (!myname){
+        document.getElementById('myh1').textContent = 'please enter your name first';
+    }
     
 
-    
-    
-<script src="index.js"></script>   
-</body>
-</html>
+}
+
